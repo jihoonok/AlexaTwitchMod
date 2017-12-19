@@ -1,0 +1,113 @@
+Intent Schema 
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "Media",
+          "type": "MEDIA"
+        }
+      ],
+      "intent": "Post"
+    },
+    {
+      "intent": "Viewer"
+    },
+    {
+      "intent": "Raffle",
+      "slots": [
+        {
+          "name": "Prize",
+          "type": "PRIZES"
+        }
+      ]
+    },
+    {
+      "intent": "Schedule"
+    },
+    {
+      "intent": "SlowOff"
+    },
+    {
+      "intent": "Subscribers"
+    },
+    {
+      "intent": "SubscribersOff"
+    },
+    {
+      "slots": [
+        {
+          "name": "Username",
+          "type": "USERS"
+        },
+        {
+          "name": "Seconds",
+          "type": "AMAZON.DURATION"
+        }
+      ],
+      "intent": "TimeOut"
+    },
+    {
+      "slots": [
+        {
+          "name": "Seconds",
+          "type": "AMAZON.DURATION"
+        }
+      ],
+      "intent": "Slow"
+    },
+    {
+      "slots": [
+        {
+          "name": "Username",
+          "type": "USERS"
+        }
+      ],
+      "intent": "Remove"
+    },
+    {
+      "slots": [
+        {
+          "name": "Username",
+          "type": "USERS"
+        }
+      ],
+      "intent": "Host"
+    },
+    {
+      "intent": "Unhost"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
+
+Custom Slot Types
+USERS
+MEDIA
+PRIZES
+
+Sample Utterances
+Post to post an {Media}
+Post to post {Media}
+Viewer to get number of viewers
+Raffle to raffle an {Prize}
+Raffle to start a new raffle for an {Prize}
+Schedule to provide a schedule
+Schedule to give a schedule
+SlowOff to turn slow off
+Subscribers to turn on subscribers mode
+SubscribersOff to turn off subscribers mode
+TimeOut to time out {Username} for {Seconds}
+Slow to slow for {Seconds}
+Remove to ban {Username}
+Remove to remove {Username}
+Host to host {Username}
+Unhost to unhost
